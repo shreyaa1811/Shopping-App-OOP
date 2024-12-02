@@ -118,7 +118,7 @@ class Ethnic_M {
         try {
             // Create the Statement object and execute the query
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM Shirts where Gender='M'");
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM Shirts");
 
             // Get the column count from the result set
             ResultSetMetaData metaData = resultSet.getMetaData();
@@ -191,9 +191,9 @@ public class ECommerceApp_M {
     private JButton button;
 
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Shopping";
+        String url = "jdbc:mysql://localhost:3306/SHOPPING";
         String username = "root";
-        String password = "Frreya.337";
+        String password = "root1234";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

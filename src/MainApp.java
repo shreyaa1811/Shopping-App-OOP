@@ -55,18 +55,18 @@ public class MainApp {
         registerButton.setFont(getButtonFont());
         JButton loginButton = new JButton("Login");
         loginButton.setFont(getButtonFont());
-        JButton forgotPasswordButton = new JButton("<html><u>Forget Password</u></html>");
+        /*JButton forgotPasswordButton = new JButton("<html><u>Forget Password</u></html>");
         forgotPasswordButton.setForeground(Color.BLUE);
         forgotPasswordButton.setBorderPainted(false);
         forgotPasswordButton.setContentAreaFilled(false);
-        forgotPasswordButton.setFont(getLinkFont());
+        forgotPasswordButton.setFont(getLinkFont());*/
         registerButton.addActionListener(e -> cardLayout.show(mainPanel, "Register"));
         loginButton.addActionListener(e -> cardLayout.show(mainPanel, "Login"));
-        forgotPasswordButton.addActionListener(e -> cardLayout.show(mainPanel, "ForgetPassword"));
+        //forgotPasswordButton.addActionListener(e -> cardLayout.show(mainPanel, "ForgetPassword"));
         panel.add(label);
         panel.add(registerButton);
         panel.add(loginButton);
-        panel.add(forgotPasswordButton);
+        //panel.add(forgotPasswordButton);
         return panel;
     }
 
@@ -337,7 +337,7 @@ public class MainApp {
     }
 
     // Forget Password Panel
-    private static JPanel createForgetPasswordPanel() {
+    /*private static JPanel createForgetPasswordPanel() {
         JPanel panel = stylePanel(new JPanel(new GridLayout(5, 2)));
 
         JLabel emailLabel = new JLabel("Enter Registered Email:");
@@ -383,7 +383,7 @@ public class MainApp {
         panel.add(backButton);
 
         return panel;
-    }
+    }*/
 
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/SHOPPING";
@@ -422,7 +422,7 @@ public class MainApp {
         mainPanel.add(createRegistrationPanel(), "Register");
         mainPanel.add(createLoginPanel(), "Login");
         mainPanel.add(createGenderSelectionPanel(), "GenderSelection");
-        mainPanel.add(createForgetPasswordPanel(), "ForgetPassword");
+        //mainPanel.add(createForgetPasswordPanel(), "ForgetPassword");
 
         // Add the main panel to the frame
         frame.add(mainPanel);

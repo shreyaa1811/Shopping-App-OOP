@@ -11,7 +11,7 @@ import java.util.Vector;
 
 public class FilterHoodies_M {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Shopping";
+        String url = "jdbc:mysql://localhost:3306/SHOPPING";
         String username = "root";
         String password = "root1234";
 

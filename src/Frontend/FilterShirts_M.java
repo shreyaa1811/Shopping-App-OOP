@@ -11,7 +11,7 @@ import java.util.Vector;
 
 public class FilterShirts_M {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Shopping";
+        String url = "jdbc:mysql://localhost:3306/SHOPPING";
         String username = "root";
         String password = "root1234";
 
@@ -220,7 +220,7 @@ public class FilterShirts_M {
                                       String minPrice, String maxPrice,
                                       boolean isRed, boolean isBlue, boolean isGreen,boolean isBlack,boolean isPink,boolean isYellow, boolean isNavy, boolean isWhite, boolean isGrey) {
         try {
-            String query = "SELECT * FROM Shirts WHERE Gender = 'M'";
+            String query = "SELECT * FROM Shirts WHERE 1=1";
             ArrayList<String> conditions = new ArrayList<>();
 
             // Add conditions for size

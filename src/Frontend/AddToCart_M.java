@@ -19,9 +19,9 @@ public class AddToCart_M {
     private static final Map<String, Item> itemCatalog = new HashMap<>();
 
     // Database connection details
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/Shopping";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/SHOPPING";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "Frreya.337";
+    private static final String DB_PASSWORD = "root1234";
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {

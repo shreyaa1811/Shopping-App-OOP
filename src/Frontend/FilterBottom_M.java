@@ -122,7 +122,7 @@ public class FilterBottom_M {
         // Set frame visible
         frame.setVisible(true);*/
         JFrame frame = new JFrame("Filter Products");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setLayout(new GridLayout(2,5));
         frame.setSize(800, 600);
 
