@@ -79,7 +79,7 @@ public class AddEthnic extends JPanel {
             JOptionPane.showMessageDialog(this, "Please Enter valid Integer for Item Number");
         }
         try {
-            p = Integer.parseInt(No);
+            p = Integer.parseInt(Price);
         } catch (NumberFormatException e) {
             validInp = false;
             JOptionPane.showMessageDialog(this, "Please Enter valid Integer for Item Price");

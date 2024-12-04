@@ -214,7 +214,7 @@ public class ECommerceApp_M {
     // Create the main frame for the application
     JFrame frame = new JFrame("E-Commerce App");
         frame.setLayout(new BorderLayout());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(1000,1000);
 
 

@@ -142,7 +142,7 @@ public class FilterTop {
             ArrayList<String> conditions = new ArrayList<>();
 
             // Add conditions for size
-            if (isSmall || isMedium || isLarge) {
+            if (isSmall || isMedium || isLarge|| isExtra) {
                 ArrayList<String> sizeConditions = new ArrayList<>();
                 if (isSmall) sizeConditions.add("Size = 'S'");
                 if (isMedium) sizeConditions.add("Size = 'M'");

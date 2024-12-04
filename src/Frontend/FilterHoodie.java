@@ -142,7 +142,7 @@ public class FilterHoodie{
             ArrayList<String> conditions = new ArrayList<>();
 
             // Add conditions for size
-            if (isSmall || isMedium || isLarge) {
+            if (isSmall || isMedium || isLarge|| isExtra) {
                 ArrayList<String> sizeConditions = new ArrayList<>();
                 if (isSmall) sizeConditions.add("Size = 'S'");
                 if (isMedium) sizeConditions.add("Size = 'M'");
@@ -172,7 +172,7 @@ public class FilterHoodie{
                 if (isGrey) colorConditions.add("Colour = 'Grey'");
                 if (isWhite) colorConditions.add("Colour = 'White'");
 
-                conditions.add("(" + String.join(" AND ", colorConditions) + ")");
+                conditions.add("(" + String.join(" OR ", colorConditions) + ")");
             }
 
             // Combine conditions into the query
